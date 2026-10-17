@@ -1,0 +1,37 @@
+
+# Sistema de Gestión de Productos - Minimarket
+
+## Descripción
+Aplicación web para administrar productos de un minimarket mediante una API REST desarrollada en PHP y una base de datos MySQL.
+
+## Tecnologías
+- PHP
+- MySQL
+- Apache mediante XAMPP
+- HTML, CSS y JavaScript
+- API REST con solicitudes HTTP
+
+## Funcionalidades
+- Consultar productos activos.
+- Registrar productos.
+- Editar productos.
+- Eliminar productos lógicamente.
+- Conservar en la base de datos los registros eliminados.
+
+## Instalación y ejecución
+
+1. Instalar XAMPP e iniciar Apache y MySQL.
+2. Copiar la carpeta del proyecto en `C:\xampp\htdocs\minimarket`.
+3. Crear la base de datos `db_minimarket_pro413` desde phpMyAdmin.
+4. Ejecutar el script SQL de creación de la tabla Producto.
+5. Verificar los datos de conexión en `backend/conexion.php`.
+6. Abrir en el navegador:
+
+   http://localhost/minimarket/frontend/index.php
+
+## Arquitectura
+El frontend envía solicitudes HTTP al backend REST.
+El backend valida y procesa las operaciones utilizando MySQL.
+
+## Nota
+Esta versión utiliza MySQL local mediante XAMPP. Docker Compose no está implementado en esta versión.
